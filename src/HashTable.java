@@ -40,6 +40,7 @@ public class HashTable<K, V> {
             List<HashNode<K, V>> temp = bucket;
             numBuckets *= 2;
             size = 0;
+            bucket = new ArrayList<>();
 
             for (int i = 0; i < numBuckets; i++)
                 bucket.add(null);
